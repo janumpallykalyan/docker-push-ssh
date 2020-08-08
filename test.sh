@@ -11,8 +11,8 @@ docker run --name docker-dind-sshd --privileged -d brthornbury/docker-dind-sshd 
 hostIp=$(docker inspect --format '{{ .NetworkSettings.IPAddress }}' docker-dind-sshd)
 echo $hostIp
 
-python setup.py sdist
-pip install dist/*.tar.gz
+python3.8 setup.py sdist
+pip3.8 install dist/*.tar.gz
 
 # Create Test Images
 image1="a84b42fbe17b4a87b032c45f3c8c74e3"
