@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="docker-push-ssh",
-    version="0.1.8",
+    version="0.1.9",
     author="Bryan Thornbury",
     author_email="",
     description="Push local docker images to your remote servers via ssh without the hassle.",
@@ -14,7 +14,7 @@ setuptools.setup(
     url="https://github.com/brthor/docker-push-ssh",
     packages=setuptools.find_packages(),
     classifiers=[
-        "Programming Language :: Python :: 2.7",
+        "Programming Language :: Python :: 3.8",
         "License :: OSI Approved :: Apache Software License",
         "Operating System :: OS Independent",
         "Intended Audience :: Developers",
